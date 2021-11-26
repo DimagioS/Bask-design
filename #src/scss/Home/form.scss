@@ -1,0 +1,154 @@
+.form {
+
+  &__input-label {
+    position: absolute;
+    top: 18px;
+    left: 30px;
+    display: block;
+    transition: 0.2s;
+    font-size: 11px;
+    color: #976950;
+    font-weight: bold;
+    outline: none;
+    pointer-events: none;
+
+    @media (max-width: 480px) {
+      left: 18px;
+    }
+  }
+
+  &__container-phone, &__container-name {
+    position: relative;
+    padding: 15px 0 0;
+  }
+
+  &__container-name {
+    margin-right: 10px;
+  }
+
+  &__input-name {
+    max-width: 160px;
+  }
+
+  &__input-phone, &__input-name {
+    width: 100%;
+    font-size: 14px;
+    color: #976950;
+    
+    outline: none;
+    padding: 14px 30px;
+    background: #E4E4E4;
+    border: 1px solid #976950;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    
+    @media (max-width: 480px) {
+      padding: 15px 15px; 
+    }
+
+    &::placeholder {
+      color: transparent;
+    }
+
+    &:placeholder-shown ~ .form__input-label {
+      cursor: text;
+      font-size: 14px;
+      top: 31px;
+      left: 22px;
+    }
+  }
+
+  &__input-name {
+
+    @media (max-width: 481px) {
+      max-width: 140px;
+    }
+  }
+
+  &__btn-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+.form__input-phone:focus, .form__input-name:focus {
+  ~ .form__input-label {
+    position: absolute;
+    top: 18px;
+    left: 30px;
+    display: block;
+    transition: 0.3s;
+    font-size: 17px;
+    font-size: 11px;
+    font-weight:700;    
+
+    @media (max-width: 480px) {
+      left: 18px;
+    }
+  }
+  color: #976950;
+}
+
+.form__input-phone, .form__input-name {
+  &:required,&:invalid { box-shadow:none; }
+}
+
+.modal-form {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+}
+
+.modal-input-phone, .modal-input-name  {
+  padding: 20px 30px;
+
+  @media (max-width: 620px) {
+    padding: 14px 30px;
+  }
+}
+
+.modal-input-name {
+  max-width: 190px;
+}
+
+.modal-send-btn {
+  width: 200px;
+  max-height: 58px;
+  height: 58px;
+
+  @media (max-width: 620px) {
+    max-height: 46px;
+    height: 46px;
+  }
+
+  @media (max-width: 480px) {
+    width: 170px; 
+  }
+}
+
+.invalid-phone, .invalid-name {
+  text-align: left;
+  color: rgb(252, 76, 76);
+  font-size: 12px;
+  position: relative;
+  left: 20px;
+  margin-top: 4px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.invalid-phone {
+  display: none;
+}
+
+.invalid-name {
+  display: none;
+}
+
+.js-validate-error-label {
+  width: 190px;
+  position: absolute;
+  left: 20px;
+  bottom: -12px;
+  font-size: 11px;
+}

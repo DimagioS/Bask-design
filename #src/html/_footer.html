@@ -1,0 +1,85 @@
+<footer id="footer" class="footer">
+  <div class="footer__container _container">
+    <div class="footer__footer-body footer-body">
+      <div class="footer-body__form-block">
+        <span class="footer-body__text-1">Заинтересованы в наших услугах?</span>
+        <span class="footer-body__text-2">Оставьте заявку и мы перезвоним Вам</span>
+        <form action="./mail.php" enctype="multipart/form-data"" class="form footer-form" method="POST">
+          <input type="hidden" name="admin_email[]" value="dimagio.s@mail.ru">
+          <input type="hidden" name="form_subject" value="Данные клиента">
+          <div class="form__container-phone">
+            <input 
+              class="form__input-phone" 
+              name="tel" 
+              type="tel" 
+              placeholder="Телефон"
+              autocomplete="off"
+              data-validate-field="tel"
+            >
+            <label for="tel" class="form__input-label">Телефон</label>
+          </div>
+          <div class="form__btn-container">
+            <div class="form__container-name">
+              <input 
+                class="form__input-name" 
+                name="name" 
+                type="text" 
+                placeholder="Имя"
+                autocomplete="off"
+                data-validate-field="name"
+              >
+              <label for="name" class="form__input-label">Имя</label>
+            </div>
+            <button data-btn="send-form" class="send-btn" type="submit">
+              <span class="send-btn__submit">Отправить</span>
+              <span class="send-btn__loading"><i class="fa fa-refresh"></i></span>
+              <span class="send-btn__check">Заявка отправлена<i class="fa fa-check"></i></span>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="footer-body__footer-contacts footer-contacts">
+        <nav class="footer-contacts__first-block">
+          <div class="footer-contacts__header">
+            <span>Контактная информация</span>
+          </div>
+          <div class="footer-contacts__contacts-block">
+            <div class="footer-contacts__item">
+              <i class="fab fa-whatsapp"></i>
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+79173646438">+7 (917) 364-64-38</a>
+            </div>
+            <div class="footer-contacts__item">
+              <i class="fab fa-whatsapp"></i>
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+79992271982">+7 (999) 227-19-82</a>
+            </div>
+            <div class="footer-contacts__item">
+              <i class="fab fa-instagram"></i>
+              <a target="_blank" href="https://www.instagram.com/bask.design.studio/"><span>bask.design.studio</span></a>
+            </div>
+            <div class="footer-contacts__item">
+              <i class="far fa-envelope"></i>
+              <a href="mailto:Bask.Design@yandex.ru">Bask.Design@yandex.ru</a>
+            </div>
+          </div>
+          <div class="footer-contacts__text">
+            <span>работаем в Санкт-Петербурге и по всей России</span>
+          </div>
+        </nav>
+        <div class="footer-contacts__second-block">
+          <div class="footer-contacts__logo">
+            <img src="./img/icons/logo-white.png" alt="logo">
+          </div>
+          <div class="footer-contacts__logo-text">
+            <span>Создадим теплый интерьер для Вас!</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer__text-logo">
+      <span>© 2021 BaskDesignSrudio Студия дизайна интерьеров СПб</span>
+    </div>
+  </div>
+</footer>

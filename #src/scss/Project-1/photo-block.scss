@@ -1,0 +1,130 @@
+.photo-block {
+
+  &__container {
+    padding: 150px 40px 50px;
+
+    @media (max-width: 600px) {
+      padding: 100px 20px 50px;
+    }
+  }
+
+  &__header {
+    margin-bottom: 44px;
+
+    h2 {
+      font-size: 48px;
+      color: #563D2F;
+      margin-bottom: 40px;
+      text-align: center;
+
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 35px;
+      }
+    }
+  }
+
+  &__photo {
+    @supports not (display: grid) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @supports (display: grid) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem 1.5rem;
+    }
+
+    img {
+
+      @supports not (display: grid) {
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 1250px) {
+        width: 90%;
+        height: auto;
+      }
+
+      @media (max-width: 1250px) {
+        @supports not (display: grid) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    @media (max-width: 1250px) {
+
+      @supports (display: grid) {
+        gap: 3rem 0rem;
+      }
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      @supports (display: grid) {
+        gap: 2rem 0rem;
+      }
+    }
+  }
+}
+
+.footer__text-logo {
+  text-align: center;
+}
+
+.footer__container {
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-contacts__header {
+  text-align: center;
+}
+
+.footer-contacts__first-block {
+  margin-right: 0;
+}
+
+.contacts-block__first-block {
+  margin-right: 80px;
+
+  @media (max-width: 650px) {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}
+
+.footer-contacts__contacts-block {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
+}
+
+.footer-contacts__item {
+  justify-content: flex-start;
+
+  .fab, .fas, .far {
+    margin-right: 10px;
+  }
+
+  @media (max-width: 650px) {
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}

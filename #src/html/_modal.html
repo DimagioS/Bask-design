@@ -1,0 +1,46 @@
+<div class="modal modal-hide">
+  <div class="modal__bg" data-close="close"></div>
+
+  <div class="modal__container">
+    <div class="modal__close" >
+      <img src="./img/icons/close.png" data-close="close" alt="">
+    </div>
+
+    <div class="modal__header">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</div>
+
+    <form enctype="multipart/form-data" class="form modal-form" method="POST">
+      <div class="form__container-phone">
+        <input 
+          class="form__input-phone modal-input-phone" 
+          name="tel"
+          type="tel" 
+          placeholder="Телефон"
+          autocomplete="off"
+          data-validate-field="tel"
+        >
+        <label for="tel" class="form__input-label">Телефон</label>
+      </div>
+      <div class="form__btn-container">
+        <div class="form__container-name">
+          <input 
+            class="form__input-name modal-input-name" 
+            name="name"
+            type="text" 
+            placeholder="Имя"
+            autocomplete="off"
+            data-validate-field="name"
+          >
+          <label for="name" class="form__input-label">Имя</label>
+        </div>
+        <button data-btn="send-form" class="send-btn modal-send-btn" type="submit">
+          <span class="send-btn__submit">Отправить</span>
+          <span class="send-btn__loading"><i class="fa fa-refresh"></i></span>
+          <span class="send-btn__check">Заявка отправлена<i class="fa fa-check"></i></span>
+        </button>
+      </div>
+    </form>
+
+    <div class="modal__text">Оставьте заявку и мы перезвоним Вам в ближайшее время :)</div>
+  </div>
+
+</div>

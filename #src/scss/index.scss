@@ -1,0 +1,18 @@
+// Basic
+@import './_basic/fonts.scss';
+@import './_basic/basic';
+
+// Static Blocks
+@import './_block/footer.scss';
+@import './_block/button.scss';
+@import './_block/modal.scss';
+
+// Blocks
+@import './Home/header.scss';
+@import './Home/main-block.scss';
+@import './Home/about-us.scss';
+@import './Home/portfolio.scss';
+@import './Home/process-work.scss';
+@import './Home/price-block.scss';
+@import './Home/form.scss';
+

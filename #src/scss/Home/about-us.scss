@@ -1,0 +1,117 @@
+.page {
+  &__aboutus-block {
+    background-image: url('../img/about-us/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-margin-top: 40px;
+  }
+}
+
+.aboutus-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 40px 100px;
+
+  @media (max-width: 1024px) {
+    padding: 47px 40px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: 480px) {
+    padding: 47px 35px 70px;
+  }
+
+  @media (max-width: 380px) {
+    padding: 47px 20px 70px;
+  }
+
+  &__header-adaptive {
+    display: none;
+
+    h2 {
+      font-size: 48px;
+      color: #563D2F;
+      text-align: center;
+    }
+
+    @media (max-width: 1024px) {
+      display: block;
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: 600px) {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      @media (max-width: 600px) {
+        font-size: 43px;
+      }
+
+      @media (max-width: 400px) {
+        font-size: 32px;
+      }
+    }
+  }
+
+  &__image {
+    margin-right: 75px;
+
+    img {
+      @media (max-width: 480px) {
+        width: 280px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      margin-right: 0px;
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: 480px) {
+      margin-right: 0px;
+      margin-bottom: 30px;
+    }
+  }
+
+
+  &__content {
+    padding-top: 49px;
+
+    @media (max-width: 1024px) {
+      padding-top: 0px;
+    }
+
+    h2 {
+      font-size: 48px;
+      color: #563D2F;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    h2 {
+      @media (max-width: 1024px) {
+        display: none;
+      }
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 27px;
+      line-height: 150%;
+      text-align: justify;
+      color: #000000;
+      font-family: 'Roboto', sans-serif;
+      text-indent: 50px;
+      max-width: 700px;
+
+      @media (max-width: 480px) {
+        text-indent: 20px;
+        font-size: 16px;
+        text-align: left;
+      }
+    }
+  }
+}

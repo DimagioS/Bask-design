@@ -1,0 +1,24 @@
+// Basic
+body {
+  height: 100%;
+  user-select: none;
+  font-family: 'Work Sans', 'Roboto';
+}
+@import './_basic/fonts.scss';
+@import './_basic/basic';
+
+// Static Blocks
+@import './_block/footer.scss';
+@import './_block/button.scss';
+@import './_block/modal.scss';
+
+// Blocks
+@import './Project-2/header.scss';
+@import './Project-2/main-block.scss';
+@import './Project-2/about-us.scss';
+@import './Project-2/photo-block.scss';
+
+
+@import './Home/form.scss';
+
+
